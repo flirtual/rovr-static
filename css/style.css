@@ -1281,8 +1281,18 @@ a {
 .conversejs .chat-msg--with-avatar .chat-msg__content {
     margin-left: 0 !important;
 }
+.conversejs .message.chat-msg .chat-msg__content {
+    width: 100% !important;
+}
 .conversejs .chat-msg__actions button {
     margin-top: 2px !important;
+    filter: none !important;
+}
+.conversejs .chat-msg__actions button::before {
+    display: none !important;
+}
+.conversejs .chat-msg__actions button:focus {
+    box-shadow: none !important;
 }
 .conversejs .chatbox-title__text {
     font-family: filicudi-solid, sans-serif !important;
@@ -1338,6 +1348,9 @@ a {
 .conversejs converse-chat-toolbar .fas svg, 
 .conversejs converse-chat-toolbar .fas:hover svg {
     fill: var(--blueraspberry) !important;
+}
+.conversejs converse-chat-toolbar .send-button .fa svg {
+    fill: #fff !important;
 }
 .conversejs .show-user-details-modal {
     display: none !important;
@@ -1437,6 +1450,7 @@ a {
 .conversejs .chatbox .message a.show-msg-author-modal {
     font-family: filicudi-solid, sans-serif !important;
     color: #000 !important;
+    pointer-events: none;
 }
 .conversejs .chatbox .flyout .chatbox-title__text .show-msg-author-modal {
     pointer-events: none !important;
