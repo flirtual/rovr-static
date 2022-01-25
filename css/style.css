@@ -862,6 +862,25 @@ a {
     border-bottom: none !important;
     font-family: filicudi-solid, sans-serif !important;
 }
+.ql-tooltip {
+    border: 6px solid #000;
+}
+.ql-tooltip input {
+    transform: translateY(-3px);
+}
+.ql-tooltip .ql-preview {
+    transform: translateY(3px);
+    color: #000;
+    text-decoration: underline;
+}
+.ql-tooltip .ql-action, .ql-tooltip .ql-remove {
+    color: var(--blueraspberry);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+    color: var(--blueraspberry) !important;
+}
 
 .tabs {
     white-space: nowrap;
@@ -1251,10 +1270,6 @@ a {
 }
 .bio .ql-align-right {
     text-align: right;
-}
-
-.ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
-    color: var(--blueraspberry) !important;
 }
 
 #editgrid {
