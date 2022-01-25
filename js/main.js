@@ -69,6 +69,10 @@ function move_notificationcount(pos) {
 }
 
 function external_link(event, link) {
+    if (link.href.startsWith("https://" + window.location.hostname + "/")) {
+        return true;
+    }
+
     event.preventDefault();
     if (confirm("You are leaving ROVR. Are you sure you want to visit " + link.href + "? It could be sketchy!")) {
         window.open(link.href, "_blank", "noopener");
